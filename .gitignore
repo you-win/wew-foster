@@ -1,0 +1,7 @@
+.vscode
+.vs
+*/bin
+*/obj
+*.csproj.user
+*.DS_Store
+*/MSBuild_Logs

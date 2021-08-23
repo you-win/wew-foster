@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>Foster.OpenGL</RootNamespace>
+    <AssemblyName>Foster.OpenGL</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\batch2d.frag" />
+    <None Remove="Resources\batch2d.vert" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\batch2d.frag" />
+    <EmbeddedResource Include="Resources\batch2d.vert" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\Foster.Framework.csproj" />
+  </ItemGroup>
+
+</Project>
